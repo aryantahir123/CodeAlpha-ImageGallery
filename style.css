@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #a899a7;
+}
+h1{
+    text-align: center;
+    color: green;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+h1::selection{
+   color: white;
+   background: green;
+}
+.gallery{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
+.car-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 20px;
+}
+.car-gallery img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.car-gallery img:hover{
+    transform: scale(0.8)rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68,77,136, 0.2);
+}
+
+.cities-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 20px;
+}
+.cities-gallery img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.cities-gallery img:hover{
+    transform: scale(0.8)rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68,77,136, 0.2);
+}
+
+.full-image{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.full-image img{
+    width: 90%;
+    max-width: 500px;
+}
+.full-image span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
